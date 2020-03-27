@@ -1,4 +1,20 @@
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<?php
+  mb_language("Japanese");
+  mb_internal_encoding("UTF-8");
+
+　　　$to = $_POST['name'];　
+  $to = $_POST['to'];
+  $title = $_POST['title'];
+  $content = $_POST['content'];
+
+if (!mb_send_mail(“fukushima@pierz-inc.com”$name,$to, $title, $content)){
+    echo "メールを送信しました";
+  } else {
+    echo "メールの送信に失敗しました";
+  }
+?>
+
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -52,21 +68,7 @@
     <div class="container">
       <div class="main">
   <div class="contact-form">
-    <?php
-			mb_language("Japanese");
-			mb_internal_encoding("UTF-8");
 
-　　　$to = $_POST['name'];　
-			$to = $_POST['to'];
-			$title = $_POST['title'];
-			$content = $_POST['content'];
-
-if (!mb_send_mail(“fukushima@pierz-inc.com”$name,$to, $title, $content)){
-				echo "メールを送信しました";
-			} else {
-				echo "メールの送信に失敗しました";
-			}
-		?>
   </div>
 </div>
     </div>
