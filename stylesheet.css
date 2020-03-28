@@ -1,4 +1,7 @@
 
+@import url(https://fonts.googleapis.com/css?family=Sawarabi+Mincho);
+
+
 * {
   box-sizing: border-box;
 }
@@ -150,6 +153,8 @@ footer h3{
 }
 .company li{
   padding:5px;
+  font-weight:bold;
+  color:#2f4f4f;
 }
 .map{
   width:300px;
@@ -170,7 +175,7 @@ footer h3{
 }
 
 .main {
-width: 100%;
+  width: 100%;
 }
 
 .contact-form {
@@ -237,4 +242,8 @@ textarea {
   font-size: 14px;
   line-height: 1.428571429;
   color: #555;
+}
+.main_copy{
+  color:#ff8c00;
+  margin:30px 0px;
 }
